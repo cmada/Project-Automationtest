@@ -1,5 +1,6 @@
 package search;
 
+import org.example.AppConfig;
 import org.example.DriverFactory;
 import org.junit.After;
 import org.junit.Before;
@@ -16,8 +17,10 @@ public class TestBase {
     }
 
     @After
-    public void tearDown(){
-        driver.quit();
+    public void tearDown(){ driver.quit(); }
+
+    public void openHomePage(){
+        driver.get(AppConfig.getSiteUrl());
     }
 
 }
