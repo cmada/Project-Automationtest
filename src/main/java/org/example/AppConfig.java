@@ -22,6 +22,7 @@ public class AppConfig {
 
     private static String chromeDriverPath = properties.getProperty("chrome.driver.path");
     private static String geckoDriverPath = properties.getProperty("gecko.driver.path");
+    private static String internetExplorerDriverPath = properties.getProperty("ie.driver.path");
     private static String siteUrl = properties.getProperty("site.url");
 
     public static String getChromeDriverPath() {
@@ -34,5 +35,9 @@ public class AppConfig {
 
     public static String getSiteUrl() {
         return siteUrl;
+    }
+
+    public static String getInternetExplorerDriverPath() {
+        return internetExplorerDriverPath;
     }
 }
